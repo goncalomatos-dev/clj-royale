@@ -1,6 +1,11 @@
 # clj-royale
 
-FIXME: description
+Useful Links
+
+https://clojure.org/guides/learn/clojure
+https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md
+https://clojars.org/
+https://github.com/ring-clojure/ring/wiki/Parameters
 
 ## Installation
 
