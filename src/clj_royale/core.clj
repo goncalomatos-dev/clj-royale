@@ -1,7 +1,11 @@
 (ns clj-royale.core
-  (:gen-class))
+  (:gen-class)
+  (:use ring.util.response
+        ring.adapter.jetty
+        ring.middleware.resource))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn handler [request]
+  (resource-response "public/index.html"))
+
+(defn -main [& args]
+  (run-jetty handler {:port 8080}))
